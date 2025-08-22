@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% from "macros/jumbotron.html" import jumbotron_macro with context %}
+{% block title_extra %} - [{{ article.venue_short }} {{ article.year }}] {{ article.title }}{% endblock %}
+{% block content %}
+  {{ jumbotron_macro('Publication', article.cover) }}
+  <main class="container">
+    {% if article.image %}
+      <figure class="mx-auto mb-5">
+        <img class="img-fluid" src="{{ SITEURL }}/images/publication/{{ article.image | default('default.jpg') }}" alt="{{ article.title }}" />
+      </figure>
+    {% endif %}
+    <section class="row">
+      <section class="col-12 col-lg-6">
+        <section class="mb-5">
+          <h4 class="section-title mb-3">Title</h4>
+          <div><b>{{ article.title }}</b></div>
+        </section>
+        <section class="mb-5">
+          <h4 class="section-title mb-3">Authors</h4>
+          <div>{{ article.authors | linkify_members }}</div>
+        </section>
+      </section>
+      <section class="col-12 col-lg-6">
+        <section class="mb-5">
+          <h4 class="section-title mb-3">Details</h4>
+          <div>
+            <dl>
+              <dt>Published on</dt>
+              <dd>{{ article.date | strftime("%Y-%m-%d") }}</dd>
+              <dt>Published in</dt>
+              <dd>{{ article.venue_name }}</dd>
+              {% if article.link or article.code %}
+                <dt>Link</dt>
+                <dd>
+                  {% if article.link %}
+                    [ <a class="link" href="{{ article.link }}" target="_blank">paper</a> ]
+                  {% endif %}
+                  {% if article.code %}
+                    [ <a class="link" href="{{ article.code }}" target="_blank">code</a> ]
+                  {% endif %}
+                </dd>
+              {% endif %}
+            </dl>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="mb-5">
+      <h4 class="section-title mb-3">Abstract</h4>
+      <div>{{ article.content }}</div>
+    </section>
+  </main>
+{% endblock %}

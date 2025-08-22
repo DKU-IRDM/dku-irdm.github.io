@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% from "macros/jumbotron.html" import jumbotron_macro with context %}
+{% block title_extra %} - About{% endblock %}
+{% block content %}
+  {{ jumbotron_macro(page.title + " " + SITENAME, page.cover) }}
+  <main class="container">
+    <div>{{ page.content }}</div>
+  </main>
+{% endblock %}

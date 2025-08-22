@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% from "macros/jumbotron.html" import jumbotron_macro with context %}
+{% from "macros/member-sections.html" import member_sections_macro with context %}
+{% block title_extra %} - Members{% endblock %}
+{% block content %}
+  {{ jumbotron_macro(page.title, page.cover) }}
+  <main class="container">
+    <section class="mb-5">
+      <h2 class="section-title mb-3">Current Members</h2>
+      {{ member_sections_macro(verbose_current_member_data) }}
+    </section>
+    {% if verbose_alumni_member_data %}
+      <section class="mb-5">
+        <h2 class="section-title mb-3">Alumni</h2>
+        {{ member_sections_macro(verbose_alumni_member_data) }}
+      </section>
+    {% endif %}
+  </main>
+{% endblock %}

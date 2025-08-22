@@ -1,0 +1,12 @@
+{% macro headline_list_macro(headlines) %}
+  {% for headline in headlines %}
+    <div class="mb-3">
+      <div>
+        <span class="badge text-bg-dark mb-1">{{ headline.date | strftime("%Y-%m-%d") }}</span>
+      </div>
+      <div>
+        <a class="link" href="{{ SITEURL }}/headline/{{ headline.slug }}/">{{ headline.title }}</a>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}

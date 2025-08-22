@@ -1,0 +1,54 @@
+<nav id="header" class="navbar fixed-top navbar-expand-lg border-bottom bg-light" data-bs-theme="light">
+  <div class="container">
+    <a class="navbar-brand text-dark" href="{{ SITEURL }}"><b>{{ SITENAME }}</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-menu" aria-controls="header-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="header-menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          {% if output_file == 'index.html' %}
+            <a class="nav-link active link-success" aria-current="page" href="{{ SITEURL }}">Home</a>
+          {% else %}
+            <a class="nav-link" href="{{ SITEURL }}">Home</a>
+          {% endif %}
+        </li>
+        <!-- <li class="nav-item">
+          {% if output_file == 'about.html' %}
+            <a class="nav-link active link-success" aria-current="page" href="{{ SITEURL }}/about.html">About</a>
+          {% else %}
+            <a class="nav-link" href="{{ SITEURL }}/about.html">About</a>
+          {% endif %}
+        </li> -->
+        <li class="nav-item">
+          {% if output_file == 'members/index.html' %}
+            <a class="nav-link active link-success" aria-current="page" href="{{ SITEURL }}/members/">Members</a>
+          {% else %}
+            <a class="nav-link" href="{{ SITEURL }}/members/">Members</a>
+          {% endif %}
+        </li>
+        <!-- <li class="nav-item">
+          {% if output_file == 'projects.html' %}
+            <a class="nav-link active link-success" aria-current="page" href="{{ SITEURL }}/projects.html">Projects</a>
+          {% else %}
+            <a class="nav-link" href="{{ SITEURL }}/projects.html">Projects</a>
+          {% endif %}
+        </li> -->
+        <li class="nav-item">
+          {% if output_file == 'publications/index.html' %}
+            <a class="nav-link active link-success" aria-current="page" href="{{ SITEURL }}/publications/">Publications</a>
+          {% else %}
+            <a class="nav-link" href="{{ SITEURL }}/publications/">Publications</a>
+          {% endif %}
+        </li>
+        <li class="nav-item">
+          {% if output_file == 'lectures/index.html' %}
+            <a class="nav-link active link-success" aria-current="page" href="{{ SITEURL }}/lectures/">Lectures</a>
+          {% else %}
+            <a class="nav-link" href="{{ SITEURL }}/lectures/">Lectures</a>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

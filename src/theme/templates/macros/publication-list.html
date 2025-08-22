@@ -1,0 +1,21 @@
+{% macro publication_list_macro(publications) %}
+  {% for publication in publications %}
+    <div class="mb-3">
+      <div>
+        <span class="badge text-bg-dark mb-1 me-1">{{ publication.venue_short }} {{ publication.year }}</span>
+        {% if publication.link %}
+          <a class="link badge text-bg-primary me-1" href="{{ publication.link }}" target="_blank"><small>link</small></a>
+        {% endif %}
+        {% if publication.code %}
+          <a class="link badge text-bg-danger me-1" href="{{ publication.code }}" target="_blank"><small>code</small></a>
+        {% endif %}
+      </div>
+      <div>
+        <a class="link" href="{{ SITEURL }}/publication/{{ publication.slug }}/"><b>{{ publication.title }}</b></a>
+      </div>
+      <div>
+        <small>{{ publication.authors | linkify_members }}</small>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}

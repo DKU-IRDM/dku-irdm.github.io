@@ -1,0 +1,16 @@
+{% from "macros/publication-list.html" import publication_list_macro with context %}
+{% macro publication_sections_macro(verbose_publication_data) %}
+  {% for year, year_data in verbose_publication_data.items() %}
+    <section class="mb-5">
+      <h2 class="section-title mb-3">{{ year }}</h2>
+      {% for venue_type, publications in year_data.items() %}
+        <section class="card card-none mb-3">
+          <div class="card-header">
+            <h5 class="card-title mb-0 pt-1">{{ venue_type }}</h5>
+          </div>
+          <div class="card-body pb-0">{{ publication_list_macro(publications) }}</div>
+        </section>
+      {% endfor %}
+    </section>
+  {% endfor %}
+{% endmacro %}
