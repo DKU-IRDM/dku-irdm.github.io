@@ -1,9 +1,9 @@
 services:
   web:
-    image: labsite-dev
+    image: dku-irdm.github.io
     build:
       context: ${PWD}
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
       - 8000:8000
     volumes:
