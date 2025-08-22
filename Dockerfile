@@ -9,7 +9,8 @@ WORKDIR /src
 
 # install packages
 COPY requirements.txt .
-RUN pip install --requirement requirements.txt
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --requirement requirements.txt
 
 # run
 EXPOSE 8000
