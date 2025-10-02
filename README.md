@@ -5,5 +5,5 @@ Based on [Pelican Labsite](https://github.com/theeluwin/pelican-labsite).
 ## Development
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
