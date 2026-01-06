@@ -94,3 +94,7 @@ figure img {
 .member-image {
     width: 240px;
 }
+
+.publication-abstract p {
+    text-align: justify;
+}
