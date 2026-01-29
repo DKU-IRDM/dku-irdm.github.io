@@ -6,7 +6,7 @@ date: 2025-09-01
 title: Jinseok Seol
 slug: jinseok-seol
 summary: Jinseok Seol, Professor.
-alias: 설진석
+alias: 제이미
 cover: member.jpg
 image: jinseok-seol.jpg
 membership: current
@@ -29,4 +29,8 @@ email: jinseok.seol [at] dankook.ac.kr
 
 ##### External Links
 
+* [Blog](https://theeluwin.github.io){:target="_blank" class="link"}
 * [GitHub](https://github.com/theeluwin){:target="_blank" class="link"}
+* [YouTube](https://www.youtube.com/@theeluwin){:target="_blank" class="link"}
+* [Google Scholar](https://scholar.google.com/citations?user=V7niLDoAAAAJ){:target="_blank" class="link"}
+* [CV](https://theeluwin.github.io/pdfs/CV.pdf){:target="_blank" class="link"}
