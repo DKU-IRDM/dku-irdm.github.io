@@ -2,9 +2,6 @@
   {% for lecture in lectures %}
     <div class="mb-3">
       <div>
-        <span class="badge text-bg-dark mb-1 me-1">{{ lecture.year }} {{ lecture.semester }}</span>
-      </div>
-      <div>
         <a class="link" href="{{ SITEURL }}/lecture/{{ lecture.slug }}/"><b>{{ lecture.title }}</b></a>
       </div>
       {% if lecture.assistants %}

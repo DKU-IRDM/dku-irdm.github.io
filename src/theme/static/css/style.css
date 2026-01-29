@@ -52,6 +52,14 @@ figure img {
     z-index: 2;
 }
 
+.navbar-brand {
+    padding: 0;
+}
+.navbar-brand img {
+    position: relative;
+    top: 3px;
+}
+
 .section-title {
     display: inline-block;
     border-bottom: 3px solid #79281C;

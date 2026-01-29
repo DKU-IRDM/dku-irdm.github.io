@@ -313,7 +313,7 @@ class DB(Singleton):
                 # sort lectures
                 if (year, semester) in cache:
                     rows = cache[(year, semester)]
-                    rows = sorted(rows, key=itemgetter('date'), reverse=True)
+                    rows = sorted(rows, key=itemgetter('date'))
                     data[year][semester] = rows
 
         # memorize
