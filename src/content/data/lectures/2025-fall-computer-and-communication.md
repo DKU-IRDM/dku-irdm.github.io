@@ -2,7 +2,7 @@
 template: articles/lecture
 category: lecture
 status: published
-date: 2025-09-01
+date: 2025-09-02
 title: Computer and Communication
 slug: 2025-fall-computer-and-communication
 summary: Computer and Communication

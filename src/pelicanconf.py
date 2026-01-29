@@ -34,11 +34,13 @@ ARTICLE_URL = '{category}/{slug}/'
 # statics
 STATIC_PATHS = [
     'images/',
-    'extra/favicon.ico',
+    'extra/favicon.png',
+    'extra/apple-touch-icon.png',
     'extra/robots.txt',
 ]
 EXTRA_PATH_METADATA = {
-    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/favicon.png': {'path': 'favicon.png'},
+    'extra/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
     'extra/robots.txt': {'path': 'robots.txt'},
 }
 
