@@ -8,7 +8,7 @@ slug: wanggyu-yoon
 summary: 윤왕규, Intern.
 alias: 윤왕규
 cover: member.jpg
-image: default.jpg
+image: wanggyu-yoon.jpg
 membership: current
 position: Intern
 joined_date: 2025-10-02
