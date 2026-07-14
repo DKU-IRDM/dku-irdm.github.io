@@ -3,10 +3,10 @@ template: articles/member
 category: member
 status: published
 date: 2026-06-29
-title: Dohyeon Won
-slug: dohyeon-won
-summary: 원도현, Intern.
-alias: 원도현
+title: Joonsang Lee
+slug: joonsang-lee
+summary: 이준상, Intern.
+alias: 이준상
 cover: member.jpg
 image: default.jpg
 membership: current
@@ -18,4 +18,4 @@ email:
 
 ##### External Links
 
-* [GitHub](https://github.com/wdh0716){:target="_blank" class="link"}
+* [GitHub](https://github.com/myCompilerWontShutUp){:target="_blank" class="link"}
